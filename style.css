@@ -1,3 +1,70 @@
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: pink;
+    font-family: Arial, sans-serif;
+    
+}
+
+div {
+    border: solid hotpink 2px;
+    padding: 8px;
+    margin: 16px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px
+}
+
+#header h1 {
+    display: flex;
+    padding: 0px 8px;
+}
+
+.dropbtn {
+    background-color: pink;
+    padding: 16px;
+    font-size: 16px;
+    border: solid hotpink 2px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: hotpink;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown 
+.dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+#main {
+   
+}
+
+#footer {
+    margin-top: auto;
+    text-align: center;
 }
